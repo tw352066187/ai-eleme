@@ -58,7 +58,7 @@ const addManyMessages = () => {
       <div class="buttons">
         <a-button @click="addMessage" type="primary">添加一条消息</a-button>
         <a-button @click="addManyMessages">添加多条消息</a-button>
-        <a-button @click="scrollToBottom" :disabled="isAtBottom"> 滚动到底部 </a-button>
+        <a-button @click="() => scrollToBottom()" :disabled="isAtBottom"> 滚动到底部 </a-button>
       </div>
     </div>
   </div>

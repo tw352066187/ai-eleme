@@ -11,9 +11,6 @@ export {}
 /* prettier-ignore */
 declare module 'vue' {
   export interface GlobalComponents {
-    AiChatContainer: typeof import('./src/components/AiChat/AiChatContainer.vue')['default']
-    AiChatInput: typeof import('./src/components/AiChat/AiChatInput.vue')['default']
-    AiMessage: typeof import('./src/components/AiChat/AiMessage.vue')['default']
     Alert: typeof import('./src/components/ui/alert/Alert.vue')['default']
     AlertDescription: typeof import('./src/components/ui/alert/AlertDescription.vue')['default']
     AlertTitle: typeof import('./src/components/ui/alert/AlertTitle.vue')['default']

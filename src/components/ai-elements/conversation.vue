@@ -38,7 +38,7 @@
       <button
         v-if="showScrollButton"
         class="absolute bottom-24 right-6 z-10 flex h-10 w-10 items-center justify-center rounded-full border border-border bg-background shadow-lg transition-colors hover:bg-muted"
-        @click="scrollToBottom"
+        @click="() => scrollToBottom()"
       >
         <svg class="h-4 w-4 text-foreground" fill="none" stroke="currentColor" viewBox="0 0 24 24">
           <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3" />
