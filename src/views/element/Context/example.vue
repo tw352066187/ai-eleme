@@ -12,19 +12,16 @@ import {
   ContextTrigger
 } from '@/components/ai-elements/context'
 
-const usageData = {
-  inputTokens: 32000,
-  outputTokens: 8000,
-  totalTokens: 40000,
-  cachedInputTokens: 0,
-  reasoningTokens: 0
-}
+// const usageData = {
+//   inputTokens: 32000,
+//   outputTokens: 8000,
+//   totalTokens: 40000
+// }
 
 const contextProps = {
   usedTokens: 40000,
   maxTokens: 128000,
-  modelId: 'openai:gpt-5',
-  usage: usageData
+  modelId: 'openai:gpt-5'
 }
 </script>
 

@@ -351,7 +351,7 @@ const mockResponses = [
   '这绝对值得探索。从我所看到的，处理这个问题的最佳方法是同时考虑理论方面和实际实现细节。'
 ]
 
-const modelId = ref<string>(models[0].id)
+const modelId = ref<string>(models[0]!.id)
 const modelSelectorOpen = ref(false)
 const useWebSearch = ref(false)
 const useMicrophone = ref(false)

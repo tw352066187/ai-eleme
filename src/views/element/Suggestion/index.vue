@@ -18,7 +18,7 @@
 </template>
 
 <script lang="ts" setup>
-import { ref, reactive } from 'vue'
+import { ref } from 'vue'
 import Example from './example.vue'
 import Guide from './guide.vue'
 

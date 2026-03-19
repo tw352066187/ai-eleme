@@ -39,7 +39,15 @@ import { computed, ref } from 'vue'
 const SUBMITTING_TIMEOUT = 200
 const STREAMING_TIMEOUT = 2000
 
-const models:any = [
+interface Model {
+  id: string
+  name: string
+  chef: string
+  chefSlug: string
+  providers: string[]
+}
+
+const models: Model[] = [
   {
     id: 'gpt-4o',
     name: 'GPT-4o',
@@ -77,7 +85,7 @@ const models:any = [
   },
 ]
 
-const modelId = ref<string>(models[0].id)
+const modelId = ref<string>(models[0]!.id)
 const modelSelectorOpen = ref(false)
 const status = ref<'submitted' | 'streaming' | 'ready' | 'error'>('ready')
 const selectedModelData = computed(() => models.find(m => m.id === modelId.value))
